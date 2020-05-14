@@ -1,0 +1,25 @@
+[FACHNAME]
+Test(Hier den Namen vom Fach einfügen)
+[FRAGE]
+EINFACH
+Was ist die richtige Antwort?
+richtig
+falsch
+falsch
+falsch
+[FRAGE]
+MITTEL
+Was ist die richtige Antwort?
+diese
+diese nicht
+diese auch nicht
+alla bist du dumm
+[FRAGE]
+MITTELSCHWER
+Wie wird die Kraft eines Körpers, der beschleunigt wird, berechnet?
+F = m * a
+E = 0,5 * m * v²
+U = R * I
+E = m * g * h
+
+ACHTUNG: Keine Leerzeilen nach einem Command in eckigen Klammern, sonst werden leere Antworten/Schwierigkeiten geladen!!!
