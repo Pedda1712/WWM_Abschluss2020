@@ -24,18 +24,6 @@ public class Frage {
 		antworten[1] = a2;
 		antworten[2] = a3;
 		antworten[3] = a4;
-		/*
-        shuffled_antworten = new String[4];
-		shuffled_antworten[0] = a1;
-		shuffled_antworten[1] = a2;
-		shuffled_antworten[2] = a3;
-		shuffled_antworten[3] = a4;
-		
-        List<String> antwortenList = Arrays.asList(shuffled_antworten);
-        Collections.shuffle(antwortenList);
-        antwortenList.toArray(shuffled_antworten);
-        
-	*/
 	}
 	
 	public boolean ueberpruefeAntwort (String a) { /*Ueberprueft die Richtigkeit von a und markiert die Frage als beantwortet*/
