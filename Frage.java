@@ -55,11 +55,11 @@ public class Frage {
 		return fragenText;
 	}
 	
-	public String[] getAntworten () { /*gibt ein Feld der Größe vier mit den enthaltenen Fragen zurück (das solltest du benutzen und dann die Antworten random zuweisen)*/
+	public String[] getAntworten () { /*gibt ein Feld der Größe vier mit den enthaltenen Antworten zurück (das solltest du benutzen und dann die Antworten random zuweisen)*/
 		return antworten;
 	}
 	
-	public String[] getShuffledAntworten () {
+	public String[] getShuffledAntworten () { /* gibt ein Feld der Größe vier mit den Antworten in zufälliger reihenfolge zurück*/
 		String[] shuffled_antworten = antworten.clone();
 		List<String> antwortenList = Arrays.asList(shuffled_antworten);
 		Collections.shuffle(antwortenList);
