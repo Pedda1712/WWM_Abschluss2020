@@ -2,9 +2,14 @@
  * @author Peter Preinesberger
  * */
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+ 
 public class Frage {
 	
 	private String[] antworten; /*Speichert die möglichen Antworten antworten[0] ist immer richtig*/
+	//private String[] shuffled_antworten;
 	private String fragenText;
 	private boolean beantwortet = false;
 	/*
@@ -19,6 +24,18 @@ public class Frage {
 		antworten[1] = a2;
 		antworten[2] = a3;
 		antworten[3] = a4;
+		/*
+        shuffled_antworten = new String[4];
+		shuffled_antworten[0] = a1;
+		shuffled_antworten[1] = a2;
+		shuffled_antworten[2] = a3;
+		shuffled_antworten[3] = a4;
+		
+        List<String> antwortenList = Arrays.asList(shuffled_antworten);
+        Collections.shuffle(antwortenList);
+        antwortenList.toArray(shuffled_antworten);
+        
+	*/
 	}
 	
 	public boolean ueberpruefeAntwort (String a) { /*Ueberprueft die Richtigkeit von a und markiert die Frage als beantwortet*/
@@ -40,6 +57,16 @@ public class Frage {
 	
 	public String[] getAntworten () { /*gibt ein Feld der Größe vier mit den enthaltenen Fragen zurück (das solltest du benutzen und dann die Antworten random zuweisen)*/
 		return antworten;
+	}
+	
+	public String[] getShuffledAntworten () {
+        String[] shuffled_antworten = antworten.clone();
+        List<String> antwortenList = Arrays.asList(shuffled_antworten);
+        Collections.shuffle(antwortenList);
+        antwortenList.toArray(shuffled_antworten);
+        
+        return  shuffled_antworten;
+        
 	}
 	
 	public void setAntworten (String[] n_antworten) {
