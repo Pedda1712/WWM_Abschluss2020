@@ -60,13 +60,13 @@ public class Frage {
 	}
 	
 	public String[] getShuffledAntworten () {
-        String[] shuffled_antworten = antworten.clone();
-        List<String> antwortenList = Arrays.asList(shuffled_antworten);
-        Collections.shuffle(antwortenList);
-        antwortenList.toArray(shuffled_antworten);
-        
-        return  shuffled_antworten;
-        
+		String[] shuffled_antworten = antworten.clone();
+		List<String> antwortenList = Arrays.asList(shuffled_antworten);
+		Collections.shuffle(antwortenList);
+		antwortenList.toArray(shuffled_antworten);
+		
+		return  shuffled_antworten;
+		
 	}
 	
 	public void setAntworten (String[] n_antworten) {
