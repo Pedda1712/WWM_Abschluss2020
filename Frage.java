@@ -9,7 +9,6 @@ import java.util.List;
 public class Frage {
 	
 	private String[] antworten; /*Speichert die möglichen Antworten antworten[0] ist immer richtig*/
-	//private String[] shuffled_antworten;
 	private String fragenText;
 	private boolean beantwortet = false;
 	/*
