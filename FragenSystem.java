@@ -11,7 +11,7 @@ import java.util.Scanner;
  * */
 public class FragenSystem {
 	
-	private Map<String,ArrayList<Frage>> tab = new HashMap<String,ArrayList<Frage>>();
+	private Map<Integer,ArrayList<Frage>> tab = new HashMap<Integer,ArrayList<Frage>>();
 	private String fachName;
 	
 	public FragenSystem () {}
@@ -24,7 +24,7 @@ public class FragenSystem {
 			switch(currentLine) {
 				case "[FACHNAME]":{fachName = fileScanner.nextLine();break;}
 				case "[FRAGE]":{
-					String diff = fileScanner.nextLine();
+					int diff = Integer.parseInt(fileScanner.nextLine());
 					String text = fileScanner.nextLine();
 					String a1 = fileScanner.nextLine();
 					String a2 = fileScanner.nextLine();
@@ -37,7 +37,7 @@ public class FragenSystem {
 		}
 	}
 	
-	public Frage getFrageVonSchwierigkeit(String s) { /*"Verbraucht" eine Frage und gibt sie zurück"*/
+	public Frage getFrageVonSchwierigkeit(int s) { /*"Verbraucht" eine Frage und gibt sie zurück"*/
 		if(tab.containsKey(s)){
 			for(int i = 0; i < tab.get(s).size();i++) {
 				if(!tab.get(s).get(i).isBeantwortet()) {
@@ -52,7 +52,7 @@ public class FragenSystem {
 		
 	}
 	
-	private void addFrageVonSchwierigkeit(String s,Frage f) { /*Fügt eine Frage hinzu*/
+	private void addFrageVonSchwierigkeit(int s,Frage f) { /*Fügt eine Frage hinzu*/
 		if(tab.containsKey(s)) {
 			tab.get(s).add(f);
 		}else {

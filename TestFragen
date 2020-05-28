@@ -1,21 +1,21 @@
 [FACHNAME]
 Test(Hier den Namen vom Fach einfügen)
 [FRAGE]
-EINFACH
+0
 Was ist die richtige Antwort?
 richtig
 falsch
 falsch
 falsch
 [FRAGE]
-MITTEL
+1
 Was ist die richtige Antwort?
 diese
 diese nicht
 diese auch nicht
 alla bist du dumm
 [FRAGE]
-MITTELSCHWER
+1
 Wie wird die Kraft eines Körpers, der beschleunigt wird, berechnet?
 F = m * a
 E = 0,5 * m * v²

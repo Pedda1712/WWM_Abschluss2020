@@ -28,15 +28,16 @@ public class TestView {
 			System.out.println("File not found");
 		}
 		
-		Frage f = m_sys.getFrageVonSchwierigkeit("MITTELSCHWER"); /*Hole eine neue Frage */
+		Frage f = m_sys.getFrageVonSchwierigkeit(1); /*Hole eine neue Frage */
 		System.out.println(f.getFragenText());
 		System.out.println("1) "+f.getAntwort(0));
 		System.out.println("2) "+f.getAntwort(1));
 		System.out.println("3) "+f.getAntwort(2));
 		System.out.println("4) "+f.getAntwort(3) + "\n"); /* \n ist nur da , um eine Leerzeile zu schaffen*/
 		
+
 		for(int i = 0; i<4;i++) { /*Ueberprüfe die vier Antworten der Frage auf ihre richtigkeit (bei einer muss true stehen)*/
-			System.out.println("Überprüfe Antwort <" + f.getAntwort(i) + "> :" + f.ueberpruefeAntwort(f.getAntwort(i)));
+			System.out.println("Überprüfe Antwort <" + i + "> :" + f.ueberpruefeAntwort(f.getAntwort(i)));
 		}
 		
 	}
